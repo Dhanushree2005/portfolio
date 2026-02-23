@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif;
 }
 
 body{
@@ -18,6 +18,9 @@ body{
     padding:20px 8%;
     background:white;
     box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    z-index:100;
 }
 
 .logo{
@@ -47,10 +50,20 @@ body{
 .hero{
     text-align:center;
     padding:100px 20px;
+    background:linear-gradient(to right,#fdfbfb,#ebedee);
+}
+
+.profile-img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    border:5px solid #7b2ff7;
 }
 
 .hero h1{
-    font-size:48px;
+    font-size:42px;
 }
 
 .hero span{
@@ -58,9 +71,54 @@ body{
 }
 
 .hero p{
-    margin-top:20px;
+    margin-top:15px;
     font-size:20px;
     color:#666;
+}
+
+/* BUTTONS */
+.hero-buttons{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-outline{
+    border:2px solid #7b2ff7;
+    color:#7b2ff7;
+}
+
+.btn-outline:hover{
+    background:#7b2ff7;
+    color:white;
+}
+
+.btn-gradient{
+    background:linear-gradient(to right,#7b2ff7,#f107a3);
+    color:white;
+}
+
+.btn-gradient:hover{
+    opacity:0.8;
+}
+
+.btn-pink{
+    background:#f107a3;
+    color:white;
+}
+
+.btn-pink:hover{
+    opacity:0.8;
 }
 
 /* ABOUT */
@@ -105,6 +163,27 @@ body{
 .card:hover{
     transform:translateY(-10px);
     box-shadow:0 15px 40px rgba(123,47,247,0.2);
+}
+
+/* CONTACT */
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    max-width:500px;
+    margin:30px auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.contact-form textarea{
+    height:120px;
+    resize:none;
 }
 
 /* FOOTER */
