@@ -152,14 +152,14 @@ body{
 }
 
 .card{
-    background:white;
+    background:linear-gradient(to right,#7b2ff7,#f107a3);
+    color:white;
     padding:40px;
     border-radius:15px;
     box-shadow:0 10px 25px rgba(0,0,0,0.08);
     transition:0.3s;
     font-weight:600;
 }
-
 .card:hover{
     transform:translateY(-10px);
     box-shadow:0 15px 40px rgba(123,47,247,0.2);
@@ -196,3 +196,4 @@ footer{
     color:#777;
 
 }
+
